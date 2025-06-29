@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mateo Chambilla</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --bg: #0e0e15;
+      --card: #191926;
+      --text: #eaeaea;
+      --accent: #7c4dff;
+      --muted: #aaa;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 4rem 1.5rem 2rem;
+      text-align: center;
+    }
+
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 100%;
+      border: 4px solid var(--accent);
+      margin-bottom: 1rem;
+      box-shadow: 0 0 20px rgba(124, 77, 255, 0.3);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    header p {
+      margin-top: 0.8rem;
+      color: var(--muted);
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin-inline: auto;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+
+    section {
+      background-color: var(--card);
+      border-left: 4px solid var(--accent);
+      padding: 2rem;
+      border-radius: 10px;
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      color: var(--accent);
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.05rem;
+      color: var(--text);
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .pasion {
+      background-color: #1f1f2e;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .pasion:hover {
+      transform: scale(1.02);
+    }
+
+    .pasion img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .pasion-content {
+      padding: 1rem;
+    }
+
+    .pasion-content h3 {
+      color: var(--accent);
+      margin-bottom: 0.4rem;
+      font-size: 1.1rem;
+    }
+
+    .pasion-content p {
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media (max-width: 768px) {
+      .galeria {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="mateo.jpg" alt="Foto de Mateo Chambilla" class="profile-img" />
+    <h1>Mateo Chambilla</h1>
+    <p>Un paso cada día. Firme. Silencioso. Con intención.</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Pasiones que entrenan mi mente y carácter</h2>
+      <div class="galeria">
+
+        <div class="pasion">
+          <img src="natacion.jpg" alt="Mateo nadando">
+          <div class="pasion-content">
+            <h3>Natación</h3>
+            <p>Entreno diariamente. Me conecta con el control corporal, el ritmo interno y la precisión.</p>
+          </div>
+        </div>
+
+        <div class="pasion">
+          <img src="basquet.jpg" alt="Mateo jugando basket">
+          <div class="pasion-content">
+            <h3>Basket</h3>
+            <p>Me forma en trabajo en equipo, foco y respuesta bajo presión. Cada juego es decisión.</p>
+          </div>
+        </div>
+
+        <div class="pasion">
+          <img src="running.jpg" alt="Mateo corriendo">
+          <div class="pasion-content">
+            <h3>Running</h3>
+            <p>Correr me fortalece. No solo las piernas: también la mente cuando todo pide rendirse.</p>
+          </div>
+        </div>
+
+        <div class="pasion">
+          <img src="musica.jpg" alt="Mateo y la música">
+          <div class="pasion-content">
+            <h3>Música</h3>
+            <p>La escucho cuando estudio, entreno o respiro. Me enfoca, me acompaña y me alinea.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h2>Valores que guían mi camino</h2>
+      <p>
+        No enseño para mostrar que sé, sino porque me importa que otros entiendan. No entreno para que me vean, sino porque respeto el proceso. No estudio para notas, sino por visión.  
+        <br><br>
+        Mi valor como persona no está en lo que digo, sino en lo que sostengo día a día: disciplina, honestidad, utilidad. Enseñar es mi forma de afinar lo que aprendo. Escuchar es mi forma de construir.  
+        <br><br>
+        Creo en aportar desde el fondo, no desde la pose. Desde la presencia, no desde el ruido. Me enfoco en lo que puedo controlar: actitud, energía, claridad. Lo demás, viene por consecuencia.
+        <br><br>
+        Si algo quiero dejar en el camino, es una señal de que se puede crecer sin perderse, servir sin fingir, y avanzar sin pisar a nadie. Ese es el tipo de aporte que me importa.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2025 Mateo Chambilla • Enseñar, construir, aportar: con humildad, sin pausa.
+  </footer>
+
+</body>
+</html>
